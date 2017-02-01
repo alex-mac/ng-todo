@@ -4,8 +4,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     controller: 'HomeCtrl'
   })
   .otherwise({
-    templateUrl: 'app/components/404/404View.html',
-    controller: 'app/components/404/404Controller.js'
+    templateUrl: 'app/components/404/404.view.html',
+    controller: '404Ctrl'
   });
 
   $locationProvider.html5Mode(false).hashPrefix('!');
