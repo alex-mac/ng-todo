@@ -1,4 +1,13 @@
 app.controller('HomeCtrl', ['$scope', function($scope) {
-  $scope.title = "ToDo Angular App";
+  $scope.todos = [];
+  $scope.todo = {};
+
+  $scope.addToList = function() {
+    $scope.todos.push({
+        text: $scope.todo.text,
+        done: false
+      });
+      $scope.todo.text = '';
+  }
 
 }]);
