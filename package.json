@@ -1,0 +1,27 @@
+{
+  "name": "ng-todo",
+  "version": "1.0.0",
+  "description": "Angular Todo is a basic to-do application utilizing Angular 1.6.1 along with Angular Material.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-mac/ng-todo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex-mac/ng-todo/issues"
+  },
+  "homepage": "https://github.com/alex-mac/ng-todo#readme",
+  "dependencies": {
+    "angular": "^1.5.1",
+    "angular-animate": "^1.5.1",
+    "angular-aria": "^1.5.1",
+    "angular-material": "^1.1.3",
+    "angular-route": "^1.5.1"
+  }
+}
