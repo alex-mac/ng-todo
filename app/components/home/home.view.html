@@ -1,7 +1,7 @@
-<div class="list">
+<section layout="row" layout-sm="column" layout-align="center center" layout-wrap class="list">
   <label for="list-input"></label>
   <input class="list list-input" type="text" name="list-input" value="" ng-model="todo.text">
-  <button class="button" type="button" name="button" ng-click="addToList()">Add to List</button>
+  <md-button class="button" type="button" name="button" ng-click="addToList()">Add to List</md-button>
   <ul class="list">
     <li ng-repeat="todo in todos">
       <input type="checkbox" name="" value="" ng-model="todo.done">

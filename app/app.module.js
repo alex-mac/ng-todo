@@ -1,1 +1,1 @@
-var app = angular.module('ToDoApp', ['ngRoute']);
+var app = angular.module('ToDoApp', ['ngRoute', 'ngMaterial']);
