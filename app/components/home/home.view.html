@@ -1,11 +1,18 @@
-<section layout="row" layout-sm="column" layout-align="center center" layout-wrap class="list">
-  <label for="list-input"></label>
-  <input class="list list-input" type="text" name="list-input" value="" ng-model="todo.text">
-  <md-button class="button" type="button" name="button" ng-click="addToList()">Add to List</md-button>
-  <ul class="list">
-    <li ng-repeat="todo in todos">
-      <input type="checkbox" name="" value="" ng-model="todo.done">
-      <span class="list list-item list-item--{{todo.done}}">{{ todo.text }}</span>
-    </li>
-  </ul>
+<div class="container" layout="row" flex>
+
+  <md-sidenav flex class="md-whiteframe-4dp" md-is-locked-open="true">
+    <label for="list-input"></label>
+    <input class="list list-input" type="text" name="list-input" value="" ng-model="todo.text">
+    <md-button class="button" type="button" name="button" ng-class="{md-raised: hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false" ng-click="addToList()">Add to List</md-button>
+  </md-sidenav>
+  <md-content flex style="background:orange">
+    <md-list>
+      <md-list-item ng-repeat="todo in todos">
+        <md-checkbox ng-model="todo.done"></md-checkbox>
+        <md-item class="list-item--{{todo.done}}">
+          {{todo.text}}
+        </md-item>
+      </md-list-item>
+    </md-list>
+  </md-content>
 </div>

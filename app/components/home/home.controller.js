@@ -4,10 +4,11 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
 
   $scope.addToList = function() {
     $scope.todos.push({
-        text: $scope.todo.text,
-        done: false
-      });
-      $scope.todo.text = '';
+      text: $scope.todo.text,
+      done: false
+    });
+    $scope.todo.text = '';
+    
   }
 
 }]);
