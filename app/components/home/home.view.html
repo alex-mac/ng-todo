@@ -1,18 +1,12 @@
-<div class="container" layout="row" flex>
-
-  <md-sidenav flex class="md-whiteframe-4dp" md-is-locked-open="true">
-    <label for="list-input"></label>
-    <input class="list list-input" type="text" name="list-input" value="" ng-model="todo.text">
-    <md-button class="button" type="button" name="button" ng-class="{md-raised: hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false" ng-click="addToList()">Add to List</md-button>
-  </md-sidenav>
-  <md-content flex style="background:orange">
-    <md-list>
-      <md-list-item ng-repeat="todo in todos">
-        <md-checkbox ng-model="todo.done"></md-checkbox>
-        <md-item class="list-item--{{todo.done}}">
-          {{todo.text}}
-        </md-item>
-      </md-list-item>
-    </md-list>
+<div layout="column">
+  <md-content>
+    <md-tabs>
+      <md-tab ng-repeat="list in lists" label="{{list.name}}">
+        <md-content>
+          <h1>{{list.name}}</h1>
+          <p>{{list.content}}</p>
+        </md-content>
+      </md-tab>
+    </md-tabs>
   </md-content>
 </div>
