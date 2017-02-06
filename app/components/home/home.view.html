@@ -14,7 +14,13 @@
           </div>
           <ul>
             <li ng-repeat="listItem in list.content">
-              {{listItem.text}}
+              <md-button
+                md-no-ink
+                class="md-icon-button"
+                ng-click="deleteListItem($parent.$index, $index)"
+                style="font-size:10pt; color: crimson !important; opacity: .8; font-weight: bold">&#x2715
+              </md-button>
+                    {{listItem.text}}
             </li>
           </ul>
         </md-card>

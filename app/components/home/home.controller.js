@@ -14,14 +14,21 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
       todoText: "",
       content: []
     }
-  ]
-  $scope.addToList = function(idx) {
+  ];
+
+  $scope.addToList = function(idx)
+  {
     $scope.lists[idx].content.push({
       text: $scope.lists[idx].todoText,
       done: false
     });
     $scope.lists[idx].todoText = '';
-
   }
+
+  $scope.deleteListItem = function(parentIdx, idx)
+  {
+    $scope.lists[parentIdx].content.splice(idx, 1);
+  }
+
 
 }]);
