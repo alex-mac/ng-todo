@@ -1,8 +1,8 @@
-<div layout="column">
+<div layout="column" id="todoApp">
   <md-content>
-    <md-tabs>
-      <md-tab ng-repeat="list in lists" label="{{list.name}}">
-        <md-content>
+    <md-tabs  md-dynamic-height>
+      <md-tab ng-repeat="list in lists" label="{{list.name}}" >
+        <md-content >
           <h1>{{list.name}}</h1>
           <p>{{list.content}}</p>
         </md-content>

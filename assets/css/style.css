@@ -1,5 +1,6 @@
-.list-item--true {
-  text-decoration: line-through;
+#todoApp {
+  max-width: 980px;
+  margin: 50px auto;
 }
 
 md-content {
@@ -12,4 +13,8 @@ md-content md-tabs {
 
 md-content md-tabs md-tabs-wrapper {
  background: white;
+}
+
+md-content {
+  padding: 10px;
 }
