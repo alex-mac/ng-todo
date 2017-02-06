@@ -18,3 +18,11 @@ md-content md-tabs md-tabs-wrapper {
 md-card {
   padding: 10px;
 }
+
+.li-button {
+  text-align: left;
+}
+
+.completed {
+  text-decoration: line-through;
+}

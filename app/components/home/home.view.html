@@ -14,13 +14,17 @@
           </div>
           <ul>
             <li ng-repeat="listItem in list.content">
-              <md-button
-                md-no-ink
-                class="md-icon-button"
-                ng-click="deleteListItem($parent.$index, $index)"
-                style="font-size:10pt; color: crimson !important; opacity: .8; font-weight: bold">&#x2715
-              </md-button>
-                    {{listItem.text}}
+              <div layout="row">
+                <md-button
+                  md-no-ink
+                  class="md-icon-button"
+                  ng-click="deleteListItem($parent.$index, $index)"
+                  style="font-size:10pt; color: crimson !important; opacity: .8; font-weight: bold">&#x2715
+                </md-button>
+                <md-button class="li-button" ng-class="{completed: listItem.completed}" ng-click="markCompleted($parent.$index, $index)" flex>
+                  {{listItem.text}}
+                </md-button>
+              </div>
             </li>
           </ul>
         </md-card>
