@@ -1,0 +1,23 @@
+{
+  "name": "ng-todo",
+  "version": "1.0.0",
+  "description": "Angular Todo is a basic to-do application utilizing Angular 1.5.1 along with Angular Material. The application supports creating multiple distinct lits and adding items to them. I used [Colin's Angular Material Todo Demo on CodePen](http://codepen.io/cln/pen/Jdamzj) as a design guide for creating the application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-mac/ng-todo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex-mac/ng-todo/issues"
+  },
+  "homepage": "https://github.com/alex-mac/ng-todo#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}

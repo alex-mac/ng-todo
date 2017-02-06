@@ -23,6 +23,10 @@ md-card {
   text-align: left;
 }
 
+ul {
+  list-style: none;
+}
+
 .completed {
   text-decoration: line-through;
 }
