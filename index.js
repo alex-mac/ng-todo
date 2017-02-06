@@ -10,7 +10,7 @@ app.get('/', (request, response) => {
   response.render('index')
 })
 
-app.listen(port, (err) => {
+app.listen(process.env.PORT || port, (err) => {
   if (err) {
     return console.log('something bad happened', err)
   }
