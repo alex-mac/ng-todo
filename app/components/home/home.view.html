@@ -3,10 +3,15 @@
     <md-tabs  md-dynamic-height>
       <md-tab ng-repeat="list in lists" label="{{list.name}}" >
         <md-card>
-          <md-input-container class="md-block" flex-gt-sm>
-           <label>New item</label>
-           <input ng-model="todo.text">
-         </md-input-container>
+          <div layout="row">
+            <md-input-container flex>
+             <label>New Item...</label>
+             <input ng-model="todo.text">
+           </md-input-container>
+           <md-input-container>
+             <md-button class="md-primary">Add Item</md-button>
+           </md-input-container>
+          </div>
           <p>{{list.content}}</p>
         </md-card>
       </md-tab>
