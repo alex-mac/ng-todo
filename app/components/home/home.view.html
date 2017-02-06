@@ -1,18 +1,22 @@
 <div layout="column" id="todoApp">
   <md-content>
     <md-tabs  md-dynamic-height>
-      <md-tab ng-repeat="list in lists" label="{{list.name}}" >
+      <md-tab ng-repeat="list in lists track by $index" label="{{list.name}}" >
         <md-card>
           <div layout="row">
             <md-input-container flex>
-             <label>New Item...</label>
-             <input ng-model="todo.text">
+             <label>New Item... </label>
+             <input ng-model="list.todoText">
            </md-input-container>
            <md-input-container>
-             <md-button class="md-primary">Add Item</md-button>
+             <md-button class="md-primary" ng-click="addToList($index)">Add Item</md-button>
            </md-input-container>
           </div>
-          <p>{{list.content}}</p>
+          <ul>
+            <li ng-repeat="listItem in list.content">
+              {{listItem.text}}
+            </li>
+          </ul>
         </md-card>
       </md-tab>
     </md-tabs>
