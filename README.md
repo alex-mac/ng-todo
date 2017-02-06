@@ -1,6 +1,6 @@
 # Angular Todo
 
-Angular Todo is a basic to-do application utilizing Angular 1.6.1 along with Angular Material.
+Angular Todo is a basic to-do application utilizing Angular 1.5.1 along with Angular Material. The application supports creating multiple distinct lits and adding items to them. I used [Colin's Angular Material Todo Demo on CodePen](http://codepen.io/cln/pen/Jdamzj) as a design guide for creating the application.
 
 ## Contributing
 
