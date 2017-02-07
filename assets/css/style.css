@@ -19,10 +19,6 @@ md-card {
   padding: 10px;
 }
 
-.li-button {
-  text-align: left;
-}
-
 ul {
   list-style: none;
 }
@@ -36,4 +32,8 @@ ul {
   color: crimson !important;
   opacity: .8;
   font-weight: bold;
+}
+
+.li-button {
+  text-align: left;
 }

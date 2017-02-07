@@ -21,8 +21,8 @@
                   ng-click="deleteListItem($parent.$index, $index)">
                   &#x2715
                 </md-button>
-                <md-button class="li-button" ng-class="{completed: listItem.completed}" ng-click="markCompleted($parent.$index, $index)" flex>
-                  {{listItem.text}}
+                <md-button class="li-button" ng-model="listItem.completed" ng-click="markCompleted($parent.$index, $index)" flex>
+                  <span ng-class="{'completed': listItem.completed}">{{listItem.text}}</span
                 </md-button>
               </div>
             </li>
