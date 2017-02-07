@@ -17,9 +17,9 @@
               <div layout="row">
                 <md-button
                   md-no-ink
-                  class="md-icon-button"
-                  ng-click="deleteListItem($parent.$index, $index)"
-                  style="font-size:10pt; color: crimson !important; opacity: .8; font-weight: bold">&#x2715
+                  class="md-icon-button delete-button"
+                  ng-click="deleteListItem($parent.$index, $index)">
+                  &#x2715
                 </md-button>
                 <md-button class="li-button" ng-class="{completed: listItem.completed}" ng-click="markCompleted($parent.$index, $index)" flex>
                   {{listItem.text}}

@@ -20,7 +20,7 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
   {
     $scope.lists[idx].content.push({
       text: $scope.lists[idx].todoText,
-      completed: "not-completed"
+      completed: false
     });
     $scope.lists[idx].todoText = '';
   }
@@ -33,7 +33,7 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
   $scope.markCompleted = function(parentIdx, idx)
   {
     $scope.lists[parentIdx].content[idx].completed =
-    $scope.lists[parentIdx].content[idx].completed === "completed" ? "not-completed" : "completed";
+    $scope.lists[parentIdx].content[idx].completed === true ? false : true;
   }
 
 }]);
