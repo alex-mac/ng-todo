@@ -4,14 +4,14 @@ Angular Todo is a basic to-do application utilizing Angular 1.5.1 along with Ang
 
 ## Contributing
 
-To check out this application, clone this repository and run a local server (on MacOS and Linux).
+To check out this application, clone this repository and run a local server.
 
 ```
 git clone git@github.com:alex-mac/ng-todo.git
 cd ng-todo
-python -m SimpleHTTPServer
+node index.js
 
-open http://localhost:8000
+open http://localhost:3000
 ```
 
 ## Issues
