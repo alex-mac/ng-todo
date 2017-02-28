@@ -30,5 +30,10 @@
         </md-card>
       </md-tab>
     </md-tabs>
+    <md-input-container>
+      <label for="label">Add a new List</label>
+      <input type="text" id="label" ng-model="listName">
+    </md-input-container>
+    <md-button class="add-tab md-primary md-raised" ng-disabled="!listName" ng-click="newList(listName)" style="margin-right: 0;">Add List</md-button>
   </md-content>
 </div>

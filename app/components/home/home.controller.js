@@ -10,9 +10,8 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
     },
     {
       name: "groceries",
-
       todoText: "",
-      content: []
+      content: [],
     }
   ];
 
@@ -34,6 +33,16 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
   {
     $scope.lists[parentIdx].content[idx].completed =
     $scope.lists[parentIdx].content[idx].completed === true ? false : true;
+  }
+
+  $scope.newList = function(listName) {
+    $scope.lists.push({
+      name: listName,
+      todoText: "",
+      content: [],
+    });
+
+    $scope.listName = "";
   }
 
 }]);
