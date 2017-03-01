@@ -27,6 +27,7 @@
               </div>
             </li>
           </ul>
+          <md-button class="md-mini" ng-click="removeList($index)">Remove List</md-button>
         </md-card>
       </md-tab>
     </md-tabs>
@@ -34,6 +35,6 @@
       <label for="label">Add a new List</label>
       <input type="text" id="label" ng-model="listName">
     </md-input-container>
-    <md-button class="md-primary" ng-disabled="!listName" ng-click="newList(listName)">Add List</md-button>
+    <md-button class="md-primary" ng-disabled="!listName" ng-click="addList(listName)">Add List</md-button>
   </md-content>
 </div>

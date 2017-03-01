@@ -35,7 +35,7 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
     $scope.lists[parentIdx].content[idx].completed === true ? false : true;
   }
 
-  $scope.newList = function(listName) {
+  $scope.addList = function(listName) {
     $scope.lists.push({
       name: listName,
       todoText: "",
@@ -43,6 +43,10 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
     });
 
     $scope.listName = "";
+  }
+
+  $scope.removeList = function(idx) {
+    $scope.lists.splice(idx, 1);
   }
 
 }]);
